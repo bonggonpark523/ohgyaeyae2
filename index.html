@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>얼굴 슬롯머신</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="slot-section" id="slot-machine">
+      <div class="slot-row" id="eyes-row">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/eyes1.png?raw=true" alt="눈1">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/eyes2.png?raw=true" alt="눈2">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/eyes3.png?raw=true" alt="눈3">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/eyes4.png?raw=true" alt="눈4">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/eyes5.png?raw=true" alt="눈5">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/eyes6.png?raw=true" alt="눈6">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/eyes7.png?raw=true" alt="눈7">
+        <div class="arrow">▲</div>
+        <button class="control-btn" data-part="eyes">Démarrer</button>
+      </div>
+
+      <div class="slot-row" id="nose-row">
+        <div class="slot-images">
+          <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/nose1.png?raw=true" alt="코1">
+          <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/nose2.png?raw=true" alt="코2">
+          <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/nose3.png?raw=true" alt="코3">
+          <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/nose4.png?raw=true" alt="코4">
+        </div>
+        <div class="arrow">▲</div>
+        <button class="control-btn" data-part="nose">Démarrer</button>
+      </div>
+
+      <div class="slot-row" id="mouth-row">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/mouth1.png?raw=true" alt="입1">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/mouth2.png?raw=true" alt="입2">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/mouth3.png?raw=true" alt="입3">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/mouth4.png?raw=true" alt="입4">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/mouth5.png?raw=true" alt="입5">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/mouth6.png?raw=true" alt="입6">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/mouth7.png?raw=true" alt="입7">
+        <img src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/mouth8.png?raw=true" alt="입8">
+        <div class="arrow">▲</div>
+        <button class="control-btn" data-part="mouth">Démarrer</button>
+      </div>
+    </div>
+
+    <div class="result-section" id="result" style="display: none;">
+      <div class="combined-face">
+        <!-- 선택된 이미지들이 여기에 합쳐져서 표시됩니다 -->
+      </div>
+      <div class="speech-bubbles">
+        <div class="bubble left-bubble">Bonjour</div>
+        <div class="bubble right-bubble"></div>
+      </div>
+      <img id="character" src="https://github.com/bonggonpark523/ohgyaeyae/blob/main/character.png?raw=true" alt="캐릭터">
+      <button id="restart-btn" onclick="location.reload()" style="display: none;">
+        <span>Retour</span>
+      </button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

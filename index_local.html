@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>얼굴 슬롯머신</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <div class="slot-section" id="slot-machine">
+      <div class="slot-row" id="eyes-row">
+        <img src="./eyes1.png" alt="눈1">
+        <img src="./eyes2.png" alt="눈2">
+        <img src="./eyes3.png" alt="눈3">
+        <img src="./eyes4.png" alt="눈4">
+        <img src="./eyes5.png" alt="눈5">
+        <img src="./eyes6.png" alt="눈6">
+        <img src="./eyes7.png" alt="눈7">
+        <div class="arrow">▲</div>
+        <button class="control-btn" data-part="eyes">Démarrer</button>
+      </div>
+
+      <div class="slot-row" id="nose-row">
+        <div class="slot-images">
+          <img src="./nose1.png" alt="코1">
+          <img src="./nose2.png" alt="코2">
+          <img src="./nose3.png" alt="코3">
+          <img src="./nose4.png" alt="코4">
+        </div>
+        <div class="arrow">▲</div>
+        <button class="control-btn" data-part="nose">Démarrer</button>
+      </div>
+
+      <div class="slot-row" id="mouth-row">
+        <img src="./mouth1.png" alt="입1">
+        <img src="./mouth2.png" alt="입2">
+        <img src="./mouth3.png" alt="입3">
+        <img src="./mouth4.png" alt="입4">
+        <img src="./mouth5.png" alt="입5">
+        <img src="./mouth6.png" alt="입6">
+        <img src="./mouth7.png" alt="입7">
+        <img src="./mouth8.png" alt="입8">
+        <div class="arrow">▲</div>
+        <button class="control-btn" data-part="mouth">Démarrer</button>
+      </div>
+    </div>
+
+    <div class="result-section" id="result" style="display: none;">
+      <div class="combined-face">
+        <!-- 선택된 이미지들이 여기에 합쳐져서 표시됩니다 -->
+      </div>
+      <div class="speech-bubbles">
+        <div class="bubble left-bubble">Bonjour</div>
+        <div class="bubble right-bubble"></div>
+      </div>
+      <img id="character" src="./캐릭터.png" alt="캐릭터">
+      <button id="restart-btn" onclick="location.reload()" style="display: none;">
+        <span>Retour</span>
+      </button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
+
